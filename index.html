@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScentMatch | İnteraktif Nota & Koku Eşleştirici</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="badge">Algoritmik Filtreleme Motoru</span>
+      <h1>✨ ScentMatch</h1>
+      <p>Sevdiğin notaları seç, sana en uygun profil eşleşmelerini anında keşfet.</p>
+    </header>
+
+    <!-- Nota Seçim Alanı -->
+    <section class="filter-section">
+      <div class="filter-header">
+        <h3>Nota Havuzu <span id="selected-count">(0 seçildi)</span></h3>
+        <button id="clear-btn" class="clear-btn">Temizle</button>
+      </div>
+      <div id="notes-container" class="notes-grid">
+        <!-- JS ile dinamik olarak notalar buraya gelecek -->
+      </div>
+    </section>
+
+    <!-- Sonuç Vitrin Alanı -->
+    <section class="results-section">
+      <div id="results-grid" class="results-grid">
+        <!-- JS ile eşleşen kartlar buraya dizilecek -->
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
